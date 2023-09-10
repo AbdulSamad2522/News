@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Articles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="web icon" id="icon" href="Not.png">
+</head>
+<body>
+    <header>
+        <nav class="flex">
+            <div class="img">
+                <img src="logo-search-grid-1x.png" alt="" onclick="reload()">
+            </div>
+            <div class="item">
+                <ul class="flex">
+                    <li id="psl" onclick="onNavitemClick('psl')">PSL</li>
+                    <li id="politic" onclick="onNavitemClick('politic')">Politics</li>
+                    <li id="Technology" onclick="onNavitemClick('Technology')">Technology</li>
+                </ul>
+            </div>
+            <div class="search flex">
+
+                <input type="text" placeholder="e.g Science" id="search-text">
+                <a href="#" id="search-btn">
+                    Search
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+      <div class="card-container flex" id="card-container">
+
+          
+      </div>
+    </main>
+
+    <template id="card-template">
+        <div class="card">
+            <div class="card-head">
+                <img src="https://placehold.co/400x200" alt="" id="newsimage">
+            </div>
+            <div class="card-contant">
+                <h3 id="news-title">End Game</h3>
+                <h6 class="news-h6" id="news-source">Date 26, Nov 2023</h6>
+                <p class="news-contect" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat quam aliquid assumenda adipisci harum vero officiis animi corporis quisquam.</p>
+            </div>
+        </div>
+
+    </template>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
